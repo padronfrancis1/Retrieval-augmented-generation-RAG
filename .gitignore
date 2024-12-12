@@ -3,13 +3,11 @@ environment_var.py
 storage.sqlite
 
 cache/
-# models/
 
 # qdrant/*
 # !qdrant/.gitkeep
 
-offload/
-!offload/.gitkeep
+
 
 # Exclude compiled Python files
 __pycache__/
