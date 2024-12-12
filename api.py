@@ -43,7 +43,7 @@ async def startup_event():
     embed_model = HuggingFaceEmbeddings(
     model_name=sentence_embedding_model_path,
     cache_folder="./models",
-    model_kwargs={"device": "cuda"},
+    model_kwargs={"device": "cpu"},
     encode_kwargs={"normalize_embeddings": True},
     )
 

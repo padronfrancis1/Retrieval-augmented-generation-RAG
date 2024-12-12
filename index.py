@@ -38,7 +38,7 @@ def getTextFromPPTX(filename):
 def main_indexing(mypath):
     model_name = "sentence-transformers/paraphrase-MiniLM-L6-v2"
     if torch.cuda.is_available():
-        model_kwargs = {'device': 'cuda'}
+        model_kwargs = {'device': 'cpu'}
     elif torch.backends.mps.is_available():
         model_kwargs = {'device': 'mps'}
     else:
