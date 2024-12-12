@@ -1,14 +1,9 @@
 # Exclude sensitive files
 environment_var.py
 # storage.sqlite
-
 cache/
-
 # qdrant/*
 # !qdrant/.gitkeep
-
-
-
 # Exclude compiled Python files
 __pycache__/
 
